@@ -1,0 +1,11 @@
+<div class="container">
+  <br>
+  <h1>All restaurants</h1>
+  <hr>
+  <% @restaurants.each do |restaurant| %>
+  <div class="p-3 mb-2 bg-light text-dark d-flex">
+    <div class="flex-grow-1"><%=restaurant.name%></div>
+    <%= link_to "Details", restaurant, class: "btn btn-dark p-1" %>
+  </div>
+  <% end %>
+</div>
